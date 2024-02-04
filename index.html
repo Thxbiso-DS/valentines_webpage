@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>HTML + CSS</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      
+      .image {
+        display: block;
+        margin: 0 auto;
+        max-width: 25%; /* Set maximum width to 100% of the container */
+        height: auto; /* Maintain aspect ratio */
+      }
+    
+    body {
+      text-align: center; 
+    }
+    h1 {
+      margin-top: 20px; /* Add some space at the top */
+      font-family: 'Times New Roman', Times, serif; /* Change font style */
+      font-size: 32px; /* Increase font size */
+    }
+    .yes-button, .no-button {
+      border-radius: 20px; 
+      margin-top: 10px; 
+    }
+
+    p {
+      margin-top: 10px; 
+      text-align: center; /* Align text to center */
+      font-style: italic; /* Make text italic */
+    }
+    </style>
+  </head>
+  
+  <body>
+    <h1><span style="font-style: italic;">My beautiful Rea</span></h1>
+    <img src="./my baby.jpg" alt="My beautiful girlfriend" class="image" />
+    <p>
+      "When we first started talking, I never could have imagined that we would connect so deeply.<br>
+      From the moment I met you, I knew there was something special about you - something that drew me in and made my heart skip a beat.<br>
+       You are more than amazing, you are the embodiment of everything I've ever wanted in a partner: funny, kind, and simply spectacular.<br> These past few months with you have been nothing short of magical, and I still can't believe how lucky I am to have you in my life. <br>
+       Every moment with you feels like a dream come true, and I can't wait to see what our future holds together.<br>
+       This is to the point it feels like we have been together for years and I love that for us. 
+    </p>
+    <p>
+      My love, with the month of love here, my heart overflows with thoughts of you.<br> I truly believe you are my soulmate, and I am constantly building towards a life with you.<br> 
+      I am grateful for your presence in my life and promise to cherish you always.
+    </p>
+    <p>
+      With all that being said, I have to ask you, if you will do me the honour of being my Valentine? 
+    </p>
+
+
+    <form>
+      <button type="button" class="yes-button" onclick="confirmValentine()">Yes</button>
+      <button type="button" class="no-button" onclick="wrongChoice()">No</button>
+     </form>
+
+    <script>
+      function confirmValentine() {
+        var confirmation = confirm("Are you sure you want to be my Valentine?");
+        if (confirmation) {
+          window.location.href = "yay.html"; 
+        } else {
+        }
+      }
+  
+      function wrongChoice() {
+        alert("Wrong choice, silly!"); // Display message if "No" button is clicked
+      }
+    </script>
+  </body>
+</html>
